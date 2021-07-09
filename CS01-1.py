@@ -1,1 +1,1 @@
-print("helo world")
+print("แมท แทนไทย คอช")
