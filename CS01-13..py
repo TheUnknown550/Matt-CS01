@@ -5,4 +5,4 @@ while (True):
        break
     arr += [i]
     print("ur grade is",i)
-print(arr)
+print("the grade you answer is ",arr)
