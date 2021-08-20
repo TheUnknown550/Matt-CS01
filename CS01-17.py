@@ -9,6 +9,5 @@ Original file is located at
 
 import numpy as np
 from numpy import random
-for i in range (5):
-  arr= random.randint(100,size=(10))
-  print(np.sort(arr))
+arr= random.randint(100,size=(5,10))
+print(np.sort(arr))
