@@ -43,12 +43,12 @@ with mp_pose.Pose(min_detection_confidence=0.5, min_tracking_confidence=0.5) as 
             landmarks = results.pose_landmarks.landmark
 
             # Get coordinates
-            shoulder = [landmarks[mp_pose.PoseLandmark.LEFT_HIP.value].x,
-                        landmarks[mp_pose.PoseLandmark.LEFT_HIP.value].y]
-            elbow = [landmarks[mp_pose.PoseLandmark.LEFT_KNEE.value].x,
-                     landmarks[mp_pose.PoseLandmark.LEFT_KNEE.value].y]
-            wrist = [landmarks[mp_pose.PoseLandmark.LEFT_ANKLE.value].x,
-                     landmarks[mp_pose.PoseLandmark.LEFT_ANKLE.value].y]
+            shoulder = [landmarks[mp_pose.PoseLandmark.LEFT_SHOULDER.value].x,
+                        landmarks[mp_pose.PoseLandmark.LEFT_SHOULDER.value].y]
+            elbow = [landmarks[mp_pose.PoseLandmark.LEFT_EBLOW.value].x,
+                     landmarks[mp_pose.PoseLandmark.LEFT_EBLOW.value].y]
+            wrist = [landmarks[mp_pose.PoseLandmark.LEFT_WRIST.value].x,
+                     landmarks[mp_pose.PoseLandmark.LEFT_WRIST.value].y]
 
             # Calculate angle
             angle = calculate_angle(shoulder, elbow, wrist)
