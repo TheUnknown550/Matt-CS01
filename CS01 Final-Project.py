@@ -48,7 +48,7 @@ if __name__ == "__main__":
 	gui.geometry("500x500")
 	equation = StringVar()
 	expression_field = Entry(gui, textvariable=equation)
-	expression_field.grid(columnspan=4, ipadx=10)
+	expression_field.grid(columnspan=50, ipadx=10)
 	button1 = Button(gui, text=' 1 ', fg='blue', bg='grey',
 					command=lambda: press(1), height=4, width=3)
 	button1.grid(row=2, column=0)
